@@ -163,7 +163,7 @@ def run():
 
     # 必要な環境変数を取得します。
     WAKATIME_SECRET_API_KEY = get_env('WAKATIME_SECRET_API_KEY')
-    GITHUB_ACCESS_TOKEN = get_env('GITHUB_ACCESS_TOKEN')
+    GH_TOKEN = get_env('GH_TOKEN')
     GIST_ID = get_env('GIST_ID')
     # DRY_RUN のみデフォルト値 False で取得します。
     DRY_RUN = bool(os.environ.get('DRY_RUN', False))
@@ -198,7 +198,7 @@ def run():
     # gist の更新データを作成します。
     headers = {
         # 認証はパスワードでなく access token で行います。
-        'Authorization': f'token {GITHUB_ACCESS_TOKEN}',
+        'Authorization': f'token {GH_TOKEN}',
     }
     data = json.dumps({
         'description': '📊 Weekly development breakdown',
