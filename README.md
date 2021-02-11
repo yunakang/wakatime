@@ -22,7 +22,7 @@
 1. Register three env variables as repository secrets.
     - WAKATIME_SECRET_API_KEY: Get your WakaTime Secret API Key from [your account page](https://wakatime.com/settings/account).
     - GIST_ID: Create a public gist with a file named **`file`** and get the gist id. `https://gist.github.com/username/[gist id]`
-    - GITHUB_ACCESS_TOKEN: Create a token from GitHub Settings > Developer settings > Personal access tokens > Generate new token > Check gist and generate
+    - GH_TOKEN: Create a token from GitHub Settings > Developer settings > Personal access tokens > Generate new token > Check gist and generate
     - Set them as repository secrets - Repository settings > Secrets
 1. Pin the gist on your GitHub overview.
 1. Open Actions tab > Open your workflow result > build > Re-run jobs
