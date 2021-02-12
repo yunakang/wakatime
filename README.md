@@ -38,7 +38,7 @@ Create .env and run.
 ```plaintext
 WAKATIME_SECRET_API_KEY=***
 GIST_ID=***
-GITHUB_ACCESS_TOKEN=***
+GH_TOKEN=***
 ```
 
 ```bash
